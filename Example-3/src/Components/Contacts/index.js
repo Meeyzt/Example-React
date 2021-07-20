@@ -3,7 +3,11 @@ import List from "./List";
 import Form from "./Form";
 
 function Contacts() {
-  const [contacts, setContacts] = useState([]);
+  const [contacts, setContacts] = useState([
+    { fullname: "Mehmet", phone_number: "1123" },
+    { fullname: "Ahmet", phone_number: "14443" },
+    { fullname: "Turhan", phone_number: "12233" },
+  ]);
   useEffect(() => {
     console.log(contacts);
   }, [contacts]);
