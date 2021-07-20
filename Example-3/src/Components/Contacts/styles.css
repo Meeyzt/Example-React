@@ -1,0 +1,58 @@
+* {
+  color: white;
+  box-shadow: 5px, 5px, rgba(0, 0, 0, 0, 2);
+}
+#container {
+  width: 400px;
+  background-color: darkslategray;
+  padding: 20px;
+  border-radius: 25px;
+}
+input {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border-radius: 10px;
+  border: 0px;
+  height: 30px;
+  color: black;
+}
+.phoneNumber {
+  margin-top: 10px;
+}
+button {
+  color: white;
+  background-color: peru;
+  border: 0px;
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+  margin: 5px 0;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.list {
+  background-color: rgb(36, 34, 34);
+  border: 0;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+li > hr {
+  margin-left: -10px;
+}
+.list > li {
+  display: flex;
+  justify-content: space-between;
+}

@@ -18,7 +18,7 @@ function Form({ contacts, addContact }) {
   };
   return (
     <div>
-      <div>
+      <div className="fullname">
         <input
           name="fullname"
           value={contact.fullname}
@@ -26,7 +26,7 @@ function Form({ contacts, addContact }) {
           onChange={onChangeInput}
         ></input>
       </div>
-      <div>
+      <div className="phoneNumber">
         <input
           name="phone_number"
           value={contact.phone_number}
@@ -34,7 +34,7 @@ function Form({ contacts, addContact }) {
           onChange={onChangeInput}
         ></input>
       </div>
-      <div>
+      <div className="btn">
         <button onClick={onSubmit}>Add Contact</button>
       </div>
     </div>

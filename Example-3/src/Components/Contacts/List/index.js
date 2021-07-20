@@ -22,10 +22,11 @@ function List({ contacts }) {
           setFilterText(e.target.value);
         }}
       ></input>
-      <ul>
+      <ul className="list">
         {filtered.map((contact, i) => (
           <li key={i}>
-            {contact.fullname}, {contact.phone_number}
+            <span>{contact.fullname}</span>
+            <span>{contact.phone_number}</span>
           </li>
         ))}
       </ul>
