@@ -18,4 +18,4 @@
 
 # Example-5
 
-> URL Example
+> Route Example
