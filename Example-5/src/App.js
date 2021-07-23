@@ -7,6 +7,7 @@ import {
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Users from "./Components/Users";
+import Error from "./Components/Error";
 import "./App.css";
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
         <Switch>
           <Route path="/about" component={About} />
           <Route path="/users" component={Users} />
+          <Route path="*" component={Error} />
           <Route path="/" component={Home} />
         </Switch>
       </div>
