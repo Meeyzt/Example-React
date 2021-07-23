@@ -1,0 +1,28 @@
+.App {
+  width: 100vh;
+  height: 100vh;
+}
+.App.dark {
+  background-color: #282c34;
+  color: white;
+}
+.app.light {
+  color: black;
+  background-color: wheat;
+}
+
+.btn {
+  border: 0px;
+  border-radius: 10px;
+  height: 60px;
+  width: 300px;
+  font-size: 20px;
+}
+.btn.btndark {
+  color: white;
+  background-color: darkslategray;
+}
+.btn.btnlight {
+  color: black;
+  background-color: wheat;
+}
