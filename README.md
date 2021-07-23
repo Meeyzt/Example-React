@@ -23,3 +23,7 @@
 # Example-6
 
 > Formik Example
+
+# Example-7
+
+> Theme Switcher w/ useContext Example
