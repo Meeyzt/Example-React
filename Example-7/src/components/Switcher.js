@@ -1,9 +1,7 @@
-import { useContext } from "react";
-import ThemeContext from "../context/ThemeContext";
+import { useTheme } from "../context/ThemeContext";
 
 function Switcher() {
-  const { theme, setTheme } = useContext(ThemeContext);
-  console.log(theme);
+  const { theme, setTheme } = useTheme();
 
   const handleClick = () => {
     setTheme(theme === "dark" ? "light" : "dark");
