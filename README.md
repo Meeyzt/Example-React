@@ -27,3 +27,7 @@
 # Example-7
 
 > Theme Switcher w/ useContext Example
+
+# Example-8
+
+> Weatcher Control Example
