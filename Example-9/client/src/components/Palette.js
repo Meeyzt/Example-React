@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { send } from "../API/SocketAPI";
+
 function Palette() {
   const [color, setColor] = useState("#000");
   return (
@@ -9,7 +11,7 @@ function Palette() {
         value={color}
         onChange={(e) => setColor(e.target.value)}
       />
-      <button>Send Data</button>
+      <button onClick={() => send(color)}>Send Data</button>
     </div>
   );
 }
