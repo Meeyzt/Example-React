@@ -1,0 +1,9 @@
+{
+  "short_name": "Backend-Frontend Connection App",
+  "name": "Backend-Frontend Connection",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
