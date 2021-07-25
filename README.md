@@ -30,12 +30,12 @@
 
 # Example-8
 
-> Weatcher Control Example
+> Weather Control Example
 
 # Example-9
 
 > Backend-Frontend Connection Example
 
-# Example-9
+# Example-10
 
 > Chat App Example
