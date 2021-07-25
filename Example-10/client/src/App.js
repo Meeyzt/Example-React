@@ -1,8 +1,13 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Container from "./components/Container";
+import { ChatProvider } from "./context/ChatContext";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <ChatProvider>
+      <Container />
+    </ChatProvider>
+  );
 }
 
 export default App;
