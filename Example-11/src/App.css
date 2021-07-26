@@ -18,7 +18,27 @@
   height: 300px;
   background-color: #484e58;
 }
-.Box > Btn {
+.Box > .Btn {
   display: flex;
   flex-direction: row;
+  width: 100%;
+}
+.Btn > button {
+  display: flex;
+  flex-direction: row;
+  border: 0px;
+  border-radius: 5px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-left: 3px;
+  margin-right: 3px;
+  background-color: rgb(30, 51, 51);
+  color: white;
+  font-weight: bold;
+}
+.Box > span {
+  margin-bottom: 3px;
+  font-weight: bold;
 }

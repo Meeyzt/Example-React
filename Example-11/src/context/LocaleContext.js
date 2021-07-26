@@ -1,9 +1,12 @@
 import { createContext, useContext, useState } from "react";
 
-const LocaleContext = createContext();
+export const LocaleContext = createContext();
 
 export const LocaleProvider = ({ children }) => {
-  const [locale, setLocale] = useState("");
+  const localLanguage = localStorage.getItem("Locale");
+  const [locale, setLocale] = useState(
+    localLanguage ? localStorage.Locale : "tr-TR"
+  );
 
   const values = {
     locale,

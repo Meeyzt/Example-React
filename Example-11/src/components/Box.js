@@ -1,21 +1,37 @@
 import React from "react";
+import { FormattedMessage, IntlProvider } from "react-intl";
+import { useLocale } from "../context/LocaleContext";
+import messages from "../messages.json";
 
-function Box({ FormattedMessage }) {
+function Box() {
+  const { setLocale, locale } = useLocale();
+
+  const setLcl = (lcl) => {
+    setLocale(lcl);
+    localStorage.setItem("Locale", lcl);
+  };
   return (
-    <div className="Box">
-      <div className="Row">
-        <FormattedMessage messages />
+    <IntlProvider messages={messages[locale]} locale={locale}>
+      <div className="Box">
+        <div className="Row">
+          <FormattedMessage id="title" />
+        </div>
+        <div className="Row">
+          <FormattedMessage id="description" />
+        </div>
+        <br />
+        <br />
+        <span>Select a Language</span>
+        <div className="Btn">
+          <button className="LeftBtn" onClick={() => setLcl("tr-TR")}>
+            TR
+          </button>
+          <button className="RightBtn" onClick={() => setLcl("en-US")}>
+            EN
+          </button>
+        </div>
       </div>
-      <div className="Row">
-        <FormattedMessage />
-      </div>
-      <br />
-      <br />
-      <div className="Btn">
-        <button className="LangBtn">TR</button>
-        <button className="LangBtn">EN</button>
-      </div>
-    </div>
+    </IntlProvider>
   );
 }
 

@@ -1,10 +1,10 @@
 {
   "tr-TR": {
     "title": "Merhaba Dünya",
-    "descrition": "Selam arkadaşlar, nasılsınız...."
+    "description": "Selam arkadaşlar, nasılsınız...."
   },
-  "en-Us": {
+  "en-US": {
     "title": "Hello World",
-    "descrition": "Hi Guys!, How are u doing ...."
+    "description": "Hi Guys!, How are u doing ...."
   }
 }
