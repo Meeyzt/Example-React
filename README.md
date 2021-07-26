@@ -39,3 +39,7 @@
 # Example-10
 
 > Chat App Example
+
+# Example-11
+
+> Localization Example
